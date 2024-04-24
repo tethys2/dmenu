@@ -853,7 +853,9 @@ main(int argc, char *argv[])
 			puts("dmenu-"VERSION);
 			exit(0);
 		} else if (!strcmp(argv[i], "-b")) /* appears at the bottom of the screen */
-			topbar = 0;
+			topbar = 0;		
+		else if (!strcmp(argv[i], "-bw"))   /* border width */
+			border_width = atoi(argv[++i]);
 		else if (!strcmp(argv[i], "-f"))   /* grabs keyboard before reading stdin */
 			fast = 1;
 		else if (!strcmp(argv[i], "-F"))   /* fuzzy match */
