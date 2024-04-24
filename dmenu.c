@@ -883,6 +883,8 @@ main(int argc, char *argv[])
 			fuzzy = atoi(argv[++i]);
 		else if (!strcmp(argv[i], "-c"))   /* centers dmenu on screen */
 			centered = atoi(argv[++i]);
+		else if (!strcmp(argv[i], "-cw"))   /* min width of centered dmenu */
+			min_width = atoi(argv[++i]);
 		else if (!strcmp(argv[i], "-i")) { /* case-insensitive item matching */
 			fstrncmp = strncasecmp;
 			fstrstr = cistrstr;

@@ -45,6 +45,10 @@ dmenu appears at the bottom of the screen.
 .BI \-c " number"
 dmenu appears in the center if truthy
 .TP
+.BI \-cw " pixels"
+sets the minimum amount of pixels in the width when dmenu is centered
+this cannot set the pixels to be less that the amount needed to display the longest string
+.TP
 .B \-f
 dmenu grabs the keyboard before reading stdin if not reading from a tty. This
 is faster, but will lock up X until stdin reaches end\-of\-file.
