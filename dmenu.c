@@ -859,7 +859,7 @@ main(int argc, char *argv[])
 		else if (!strcmp(argv[i], "-F"))   /* fuzzy match */
 			fuzzy = atoi(argv[++i]);
 		else if (!strcmp(argv[i], "-c"))   /* centers dmenu on screen */
-			centered = 1;
+			centered = atoi(argv[++i]);
 		else if (!strcmp(argv[i], "-i")) { /* case-insensitive item matching */
 			fstrncmp = strncasecmp;
 			fstrstr = cistrstr;
